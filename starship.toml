@@ -65,7 +65,7 @@ format = '[\[$time\]]($style) '
 
 [hostname]
 ssh_symbol = "@"
-format = "'[$ssh_symbol$hostname]($style) "
+format = "[$ssh_symbol$hostname]($style) "
 
 [username]
 format = "[$user]($style) "
