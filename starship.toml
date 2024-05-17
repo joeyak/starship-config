@@ -1,0 +1,76 @@
+format = """
+$directory\
+$git_branch\
+$git_commit\
+$git_state\
+$git_status\
+$hostname\
+$cmd_duration\
+$aws\
+$python\
+$dotnet\
+$golang
+$os\
+$time\
+$sudo\
+$status"""
+
+[fill]
+symbol = " "
+
+[directory]
+truncation_symbol = "../"
+
+[git_branch]
+symbol = " "
+
+[cmd_duration]
+min_time = 0
+show_milliseconds = true
+format = '[$duration]($style) '
+
+[aws]
+disabled = true
+symbol = ""
+
+[python]
+symbol = " "
+version_format = "v${major}.${minor}"
+format = '[\[${symbol}${pyenv_prefix}(${version})(\($virtualenv\))\]]($style)'
+
+[dotnet]
+symbol = " "
+version_format = "v${major}.${minor}"
+format = '[\[$symbol($version)(🎯 $tfm)\]]($style)'
+
+[golang]
+symbol = " "
+version_format = "v${major}.${minor}"
+format = '[\[$symbol($version)\]]($style)'
+
+[os]
+disabled = false
+
+[os.symbols]
+Windows = " "
+Arch = " "
+EndeavourOS = " "
+Ubuntu = " "
+
+[time]
+disabled = false
+style = "bold blue"
+time_format = "%I:%M%p"
+format = '[\[$time\]]($style) '
+
+[hostname]
+ssh_symbol = "@"
+
+[username]
+format = "[$user]($style) "
+
+[status]
+disabled = false
+format = "[$symbol]($style) "
+symbol = "[>](bold red)"
+success_symbol = "[>](bold green)"
