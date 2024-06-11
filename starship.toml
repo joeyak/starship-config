@@ -4,8 +4,7 @@ $git_branch\
 $git_commit\
 $git_state\
 $git_status\
-$username\
-$hostname\
+$username@$hostname\
 $cmd_duration\
 $aws\
 $python\
@@ -66,11 +65,10 @@ format = '[\[$time\]]($style) '
 
 [hostname]
 ssh_only = false
-ssh_symbol = "@"
-format = "[$ssh_symbol$hostname]($style) "
+format = "[$hostname]($style) "
 
 [username]
-format = "[$user]($style) "
+format = "[$user]($style)"
 style_user = "white"
 show_always = true
 
