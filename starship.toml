@@ -12,7 +12,7 @@ $dotnet\
 $golang
 $os\
 $time\
-$sudo\
+$username\
 $status"""
 
 [fill]
@@ -56,6 +56,7 @@ Windows = " "
 Arch = " "
 EndeavourOS = " "
 Ubuntu = " "
+Debian = " "
 
 [time]
 disabled = false
@@ -64,11 +65,14 @@ time_format = "%I:%M%p"
 format = '[\[$time\]]($style) '
 
 [hostname]
-ssh_symbol = "@"
-format = "[$ssh_symbol$hostname]($style) "
+ssh_only = false
+format = "[@$hostname]($style) "
+style = "green"
 
 [username]
 format = "[$user]($style) "
+show_always = true
+aliases = { "Administrator" = "root" }
 
 [status]
 disabled = false
