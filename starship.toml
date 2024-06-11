@@ -3,6 +3,7 @@ $directory\
 $git_branch\
 $git_commit\
 $git_state\
+$username\
 $git_status\
 $hostname\
 $cmd_duration\
