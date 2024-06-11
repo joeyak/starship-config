@@ -3,8 +3,8 @@ $directory\
 $git_branch\
 $git_commit\
 $git_state\
-$username\
 $git_status\
+$username\
 $hostname\
 $cmd_duration\
 $aws\
@@ -70,6 +70,7 @@ format = "[$ssh_symbol$hostname]($style) "
 
 [username]
 format = "[$user]($style) "
+show_always = true
 
 [status]
 disabled = false
