@@ -79,3 +79,6 @@ disabled = false
 format = "[$symbol]($style) "
 symbol = "[>](bold red)"
 success_symbol = "[>](bold green)"
+
+[git_status]
+use_git_executable = true
